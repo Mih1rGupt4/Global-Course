@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discounts</title>
+</head>
+<body>
+    <script>
+        var finalPrice = function (amount){
+            discount = 0
+            if(amount <=10000){
+                discount = (5/100)
+            } else if(amount > 10000 && amount <= 20000){
+                discount = (10/100)
+            } else if(amount > 20000){ 
+                discount = (20/100)
+            }
+            return amount - (amount*discount)
+        }
+
+        purchase_amount = parseInt(prompt('Enter purchase amount: '))
+        console.log('Initial Purchase Amount = ', purchase_amount)
+        net_amt = finalPrice(purchase_amount)
+        console.log('Net Purchase Amount = ', net_amt)
+        alert('Net Pruchase Amount = ' + net_amt)
+    </script>
+</body>
+</html>
