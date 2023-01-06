@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query 2</title>
+    <style>
+        .example{
+            padding: 20px;
+            color: white;
+        }
+
+        @media screen and (min-width:600px) {
+            .example {background: blue;}
+        }
+
+        @media screen and (min-width:700px) {
+            .example {background: green;}
+        }
+
+        @media screen and (min-width:800px) {
+            .example {background: yellow;}
+        }
+
+        @media screen and (min-width:800px) {
+            .example {background: red;}
+        }
+
+        @media screen and (min-width:900px) {
+            .example {background: black;}
+        }
+
+        @media screen and (min-width:1000px) {
+            .example {background: white;}
+        }
+
+        @media screen and (min-width:1100px) {
+            .example {background: orange;}
+        }
+
+        @media screen and (min-width:1200px) {
+            .example {background: green;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Typical Media Query Breakpoints</h2>
+<p class="example">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>
+
+</body>
+</html>

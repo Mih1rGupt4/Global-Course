@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif; 
+            background: rgb(34,193,195);
+        }
+        .schedule-item {
+          border: 1px solid yellowgreen;
+          border-radius: 5px;
+          margin: 20px 0;
+          padding: 20px;
+        }
+        .schedule-item h2 {
+          font-size: 1.5em;
+          margin: 0;
+        }
+        .schedule-item p {
+          font-size: 1em;
+          margin: 10px 0;
+        }
+        table {
+        border-collapse: collapse;
+        }
+        td {
+            border: 1px solid yellowgreen;
+            padding: 10px;
+        }
+        tr:nth-child(1) td {
+            background-color: rgba(70, 108, 36, 0.13);
+        }
+        nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: lightgray;
+        }
+        nav ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        nav li {
+          margin: 0 10px;
+        }
+        nav a {
+          color: black;
+          text-decoration: none;
+        }
+      </style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li>
+            <a href="index.html"><img src="images.jpeg" style="width: 15px;"></a>
+        </li>
+        <li>
+            <a href="about.html">About</a>
+        </li>
+        <li>
+            <a href="schedule.html">Schedule</a>
+        </li>
+        <li>
+            <a href="image.html">Images</a>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+</nav><br><br>
+    <h1>Daily Schedule</h1>
+    <div class="schedule-item">
+        <h2>Opening Ceremony</h2>
+        <p>9:00 AM - 10:00 AM</p>
+        <p>Join us for the opening ceremony of the event, featuring speeches from special guests and a performance by the event's headliner.</p>
+      </div>
+      <div class="schedule-item">
+        <h2>Hackathon Starts</h2>
+        <p>10:30 AM - 10:30 AM(Next Day)</p>
+        <p>Start Working on your project....</p>
+      </div>
+      <div class="schedule-item">
+        <h2>Lunch</h2>
+        <p>12:00 PM - 1:00 PM</p>
+        <p>Enjoy a delicious lunch provided by the event organizers.</p>
+      </div>
+      <div class="schedule-item">
+        <h2>Music</h2>
+        <p>4:00 PM - 4:30 PM</p>
+        <p>Refresh Youself and take a short break</p>
+      </div>
+      <div class="schedule-item">
+          <h2>Snacks</h2>
+          <p>6:00 PM - 6:30 PM</p>
+          <p>Samosa and Tea</p>
+        </div>
+  
+        <div class="schedule-item">
+          <h2>Dinner</h2>
+          <p>8:00 PM - 9:30 PM</p>
+          <p>Dinner in hostel mess</p>
+        </div>
+  
+        <table>
+          <tr>
+            <td>Sl No</td>
+            <td>College</td>
+            <td>Participants</td>
+            <td>Loaction</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>New Horizon College</td>
+            <td>30</td>
+            <td>Banglore</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Presidency Universty</td>
+              <td>10</td>
+              <td>Banglore</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>VIT Bhopal</td>
+              <td>69</td>
+              <td>Bhopal</td>
+          </tr>
+        </table>
+</body>
+</html>

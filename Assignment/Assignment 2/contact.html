@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: rgb(34,193,195);
+        }
+        form {
+            width: 500px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        label {
+            display: block;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .Info {
+          border: 1px solid yellowgreen;
+          border-radius: 100px;
+          margin: 30px 0;
+          padding: 20px;
+        }
+        .Info input{
+            width: 300px;
+            padding: 10px;
+            border: 1px solid yellowgreen;
+            font-size: 16px;;
+        }
+        nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: lightgray;
+        }
+        nav ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        nav li {
+          margin: 0 10px;
+        }
+        nav a {
+          color: black;
+          text-decoration: none;
+        } 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><img src="images.jpeg" style="width: 15px;"></a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="schedule.html">Schedule</a>
+            </li>
+            <li>
+                <a href="image.html">Images</a>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav><br><br>
+    <address>
+        New Horizon College of Engineering<br>
+        Dr. Puneeth Rajkumar Rd<br>
+        Near Marathalli <br>
+        Banglore 560103 <br>
+        Phone: 080-66297777<br>
+        <h3>Google Maps Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.380480188092!2d77.6833873797538!3d12.933723954804881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13cb00000001%3A0xab10e26281718cc2!2sNew%20Horizon%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1672940137399!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </address>
+    <div class="Info">
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea><br>
+            <input type="submit" value="Submit">
+        </form> 
+    </div> 
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background: cyan;
+    }
+    form {
+        width: 500px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      
+      label {
+        display: block;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      input[type="submit"] {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: darkgreen;
+      }
+      nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: lightgray;
+        }
+        nav ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        nav li {
+          margin: 0 10px;
+        }
+        nav a {
+          color: black;
+          text-decoration: none;
+        }
+      </style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li>
+            <a href="index.html"><img src="images.jpeg" style="width: 15px;"></a>
+        </li>
+        <li>
+            <a href="about.html">About</a>
+        </li>
+        <li>
+            <a href="schedule.html">Schedule</a>
+        </li>
+        <li>
+            <a href="image.html">Images</a>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+</nav><br><br>
+    <form id="signup">
+        <h2>Sign Up</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="college">College:</label><br>
+        <input type="text" id="College" name="College"><br>
+        <label for="phno">Phone Number:</label><br>
+        <input type="text" id="phno" name="Phone" maxlength="10"><br>
+        <input type="submit" value="Submit">
+      </form> 
+      
+</body>
+</html>

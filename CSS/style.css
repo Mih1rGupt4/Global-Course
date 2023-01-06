@@ -1,0 +1,9 @@
+body{
+    background-color: lightblue;
+    text-align: center;
+}
+p{
+    width: 300px;
+    height: 100px;
+    border: 40px dashed yellow;
+}
