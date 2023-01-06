@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .form{
+            border: 2px solid coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <div id="form">
+        <label for="name">Enter Name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Enter Email</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="password">Enter password</label><br>
+        <input type="password" name="password" id="password"><br>
+        <button onclick="register()">Register</button>
+    </div>
+    <script>
+        function register(){
+            let name = document.getElementById('name').value
+            let email = document.getElementById('email').value
+            let password = document.getElementById('password').value
+
+            let msg = "Name : " + name + " Email: " + email
+            console.log(msg)
+        }
+    </script>
+</body>
+</html>
