@@ -1,0 +1,1 @@
+higher order function - Function which takes another function as argument

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+    <h1>Prime Number</h1>
+    <script>
+        var checkPrime=value=>{
+            count=0
+            for(let index=0; index<=value; index++){
+                if(value%index==0)
+                    count++
+            }
+            if(count==2)
+                return true
+            else
+                return false
+        }
+
+        num = parseInt(prompt('Enter a number: '))
+        if(checkPrime(num))
+            console.log(num + ' is a Prime Number')
+        else 
+            console.log(num + ' is not a Prime Number')
+    </script>
+</body>
+</html>

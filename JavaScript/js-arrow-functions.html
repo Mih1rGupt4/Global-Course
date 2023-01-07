@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <script>
+        function greet(){
+            console.log('Welcome')
+        }
+        greet()
+        var greetNew = function() {
+            console.log('Welcome from new func')
+        }
+        greetNew()
+
+        var greetNewArrow=()=>console.log("From arrow function")
+        greetNewArrow()
+
+        var addReg = function(a,b){
+            return a+b
+        }
+        result = addReg(100,200)
+        console.log("sum result = ", result)
+
+        var sireg = function(p,r,t){
+            return (p*t*r)/100
+        }
+        si=sireg(1000,4,1)
+        console.log('SI1 = ', si)
+
+        var siarrow=(p,t,r)=>(p*t*r)/100
+        si=siarrow(1000,4,1)
+        console.log('SI2 = ', si)
+        // return statement not needed with single line func
+        // if func has multiple lines then need return statement
+        var siarrowupd=(p,t,r)=>{
+            sical = (p*t*r)/100
+            return sical
+        }
+        console.log("SI3 = ", siarrowupd(1000,4,1))
+    </script>
+</body>
+</html>
