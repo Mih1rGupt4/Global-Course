@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        // defining multiple variables from some array data at a time
+        const vehicles = ['mustang','white', 'f-150', 'ford']
+        const [a,, b, c] = vehicles
+        console.log(a + " " + b + " " + c)
+        // same can be done for array argument in func
+        myVehicle(vehicles);
+
+        function myVehicle({type, color, brand, model}) {
+            console.log(type, color, brand, model)
+        }
+    </script>
+</body>
+</html>
