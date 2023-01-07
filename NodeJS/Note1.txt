@@ -1,0 +1,7 @@
+import
+component
+export default component
+-------------------------
+Hooks
+1) usestate - store/retrieve value of particular property (same as getter, setter methods in java)
+2) 
