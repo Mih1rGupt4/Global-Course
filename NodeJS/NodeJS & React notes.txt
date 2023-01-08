@@ -1,0 +1,34 @@
+An SPA (Single-page application) is a web app implementation that loads only a single web document, and then updates the body content of that single document via JavaScript APIs.
+
+Service-Oriented Architecture (SOA) is a stage in the evolution of application development and/or integration. It defines a way to make software components reusable using the interfaces. 
+
+React:
+React use Component Based Architecture
+Here everything is considered a component
+
+Types of components:
+1) Function Based
+2) Class Based
+
+NodeJS
+JS serverside Runtime Environment
+tools:
+npm - Node Package Manager
+npx - Node Package Execute (advanced version of npm used for maikng apps and all)
+
+
+Pseudocode to create a component
+
+create a component subfolder in src folder
+create new js file
+1] import React, {Hook} from 'react'
+2] define your component
+3] export your component
+
+Finally, 
+import your component in app.js
+
+============================================================
+
+Hooks: (special functions that let you "hook into" React features)
+1) usestate - store/retrieve value of particular property (similar to getter and setter methods in java)
