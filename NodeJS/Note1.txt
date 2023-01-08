@@ -1,7 +1,13 @@
-import
-component
-export default component
--------------------------
-Hooks
-1) usestate - store/retrieve value of particular property (same as getter, setter methods in java)
+Pseudocode to create a component
+1] import React, {Hook} from 'react'
+2] define const component
+3] export default component
+
+Finally, 
+add your component in app.js
+
+============================================================
+
+Hooks: (special functions that let you "hook into" React features)
+1) usestate - store/retrieve value of particular property (similar to getter and setter methods in java)
 2) 
