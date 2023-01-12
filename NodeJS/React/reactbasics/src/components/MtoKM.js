@@ -10,7 +10,7 @@ const MtoKM=()=>{
     return (
         <form>
             <input value={val} onChange={convert}/>
-            <p>Miles to Kilometer is  {val/1.6}</p>
+            <p>Miles to Kilometer is  {val*1.6}</p>
         </form>
     )
 }
