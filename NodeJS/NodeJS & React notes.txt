@@ -32,3 +32,6 @@ import your component in app.js
 
 Hooks: (special functions that let you "hook into" React features)
 1) usestate - store/retrieve value of particular property (similar to getter and setter methods in java)
+2) useEffect - perform side effects in your components. Examples: fetching data, directly updating the DOM, and timers.
+
+API - Application Programming interface

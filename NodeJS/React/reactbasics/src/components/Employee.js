@@ -1,24 +1,19 @@
-import React,{useState} from "react";
+import React,{useState} from 'react'
 
-const Employee=()=>{
+const Employee=({saveEmployee,empdata})=>{
     const [code,setCode]=useState(-1)
     const [name,setName]=useState('')
     const [dept,setDept]=useState('')
     const [sal,setSal]=useState(-1)
 
-    const [employees, setEmployees]=useState([])
-
-    const saveEmployee=()=>{
-        
-    }
-
     const addEmployee=(e)=>{
         e.preventDefault()
         console.log('code ',code)
-        console.log('name ',name)
+        console.log('name ',name) 
+        saveEmployee(code,name,dept,sal)
     }
-
-    return (
+    return(
+        <div>
         <div>
             <form onSubmit={addEmployee}>
                 <label>Code</label><br/>
@@ -33,7 +28,29 @@ const Employee=()=>{
 
             </form>
         </div>
+        <div>
+
+        <table>
+            <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+                        
+            </tr>
+            {empdata.map((emp)=>
+         <tr key={emp.code}>
+             <td>{emp.code}</td>
+             <td>{emp.name}</td>
+             <td>{emp.dept}</td>
+             <td>{emp.sal}</td>
+            
+             
+         </tr>
+         )}
+        </table>
+        </div>
+        </div>
     )
 }
-
 export default Employee

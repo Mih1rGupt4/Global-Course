@@ -7,6 +7,9 @@ import MtoKM from './components/MtoKM';
 import GroceryList from './components/GroceryList';
 import GroceryListNew from './components/GroceryListNew';
 import Employee from './components/Employee';
+import { useState } from 'react';
+import Todos from './components/Todos';
+
 
 function App() {
 
@@ -32,7 +35,16 @@ function App() {
         'qty':2,
         'amount':200
     },
-]
+  ]
+
+  const [employees, setEmployees]=useState([])
+
+  const saveEmployeeHandler=(code, name, dept, sal)=>{
+    let emp = {code:code, name:name, dept:dept, sal:sal}
+    console.log("emp #", emp)
+    setEmployees([...employees, emp])
+    console.log('employee ##', employees)
+  }
 
   return (
     <div className="App">
@@ -44,7 +56,8 @@ function App() {
         <DemoForm/>
       */}
       {/* <GroceryListNew groceryitemsdata={groceryitems}></GroceryListNew> */}
-      <Employee/>
+      {/* <Employee saveEmployee={saveEmployeeHandler} empdata={employees}/> */}
+      <Todos></Todos>
     </div>
   );
 }
